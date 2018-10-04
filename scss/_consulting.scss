@@ -1,0 +1,13 @@
+section.consulting {
+    background-color: $white;
+    
+    .consult-link {
+        min-height: 50px;
+    }
+
+    .consult-box:hover {
+        span > h6 {
+            display: none;
+        }
+    }
+}

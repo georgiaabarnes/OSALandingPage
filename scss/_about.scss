@@ -1,0 +1,20 @@
+section.about {
+    background-color: $gray-200;
+
+    .icon-text {
+        @include heading-font;
+        font-size: 16px;
+    }
+
+    i {
+        font-size: 80px;
+        color: $primary;
+        margin-bottom: 15px;
+    }
+
+    ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+    }
+}

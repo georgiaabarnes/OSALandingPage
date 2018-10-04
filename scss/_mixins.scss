@@ -1,0 +1,11 @@
+//  Mixins
+
+@mixin heading-font {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+}
+
+@mixin body-font {
+    font-family: 'Anonymous Pro', monospace;
+    letter-spacing: 1px;
+}

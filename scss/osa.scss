@@ -1,0 +1,121 @@
+@import 'variables.scss';
+@import 'mixins.scss';
+@import 'masthead.scss';
+@import 'about.scss';
+@import 'ventures.scss';
+@import 'consulting.scss';
+@import 'contact.scss';
+@import 'navbar.scss';
+
+body {
+  @include body-font;
+  letter-spacing: 0.0625em;
+}
+
+h1, h2 {
+  @include heading-font;
+}
+
+h6{
+  color: $primary;
+}
+
+a {
+  color: $black;
+  &:focus,
+  &:hover {
+    text-decoration: none;
+    color: $primary;
+  }
+}
+
+.bg-black {
+  background-color: $black !important;
+}
+
+.bg-primary {
+  background-color: $primary !important;
+}
+
+.text-primary {
+  color: $primary !important;
+}
+
+hr {
+  max-width: 100px;
+  border-width: 1px;
+  border-top: 2px solid $black !important;
+}
+
+.angled {
+  position: relative;
+  z-index: 1;
+  &:before,
+  &:after {
+    background: inherit;
+    content: '';
+    display: block;
+    height: 50%;
+    left: 0;
+    position: absolute;
+    right: 0;
+    z-index: -1;
+    -webkit-backface-visibility: hidden;
+  }
+  &:before {
+    top: 0;
+    transform: skewY(-5deg);
+    transform-origin: 0 0;
+  }
+  
+  &:after {
+    bottom: 0;
+    transform: skewY(-5deg);
+    transform-origin: 100%;
+  }
+}
+
+#about {
+  position: relative;
+  z-index: 1;
+  &:before,
+  &:after {
+    background: inherit;
+    content: '';
+    display: block;
+    height: 50%;
+    left: 0;
+    position: absolute;
+    right: 0;
+    z-index: -1;
+    -webkit-backface-visibility: hidden;
+  }
+  &:before {
+    top: 0;
+    transform: skewY(-5deg);
+    transform-origin: 0 0;
+  }
+  
+  &:after {
+    bottom: 0;
+    transform: skewY(-5deg);
+    transform-origin: 100%;
+  }
+}
+
+section {
+  padding: 100px 0;
+}
+
+.not-angled {
+  padding: 200px 0;
+}
+
+.fade-in {
+  opacity: 0;
+}
+
+.section-subhead {
+  font-weight: bolder;
+  font-size: 20px;
+}
